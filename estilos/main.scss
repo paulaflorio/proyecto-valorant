@@ -789,7 +789,7 @@ html{
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
-    padding-left: 50px;
+    padding-left: 80px;
 
     @include tablet{
         justify-content: space-around;
@@ -803,7 +803,7 @@ html{
 
     &--dos{
         justify-content: flex-end;
-        margin-right: 50px;
+        margin-right: 80px;
 
         @include movil{
             margin-right: 0;
