@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripcion y Keywords-->
+    <meta name="description" content="Riot Games presenta VALORANT: un juego de disparos táctico en primera persona, competitivo y de 5 contra 5, basado en personajes.">
+    <meta name="keywords" content="RIOT, VALORANT, videojuego, multijugador, Deathmatch, Spike Rush">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/a21a44458b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos/main.css">
+    <title>VALORANT</title>
+</head>
+<body>
+    <div class="containerPrincipal"> 
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand brand" href="./index.html">
+                        <img src="./img/simboloValorant.png" alt="Símbolo Valorant" class="brand__simbolo">Valorant
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto links">
+                      <a class="nav-link active links__item" aria-current="page" href="./index.html">Inicio</a>
+                      <a class="nav-link links__item" href="./seccion/agentes.html">Agentes</a>
+                      <a class="nav-link links__item" href="./seccion/mapas.html">Mapas</a>
+                      <a class="nav-link links__item" href="./seccion/arsenal.html">Arsenal</a>
+                      <a class="nav-link links__item" href="./seccion/mas.html">Mas</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <section class="principal">
+        </section>
+        <main>
+            <article class="presentacion">
+                <div class="container">
+                    <div class="somos" >
+                        <h1 class="somos__titulo" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500" >Somos Valorant</h1>
+                        <p  class="somos__texto" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500" >Combina tu estilo y experiencia en un escenario global y competitivo. Tienes 13 rondas para atacar y defender tu lado con armas precisas y habilidades tácticas. Además, al contar con una sola vida por ronda, tendrás que pensar más rápido que tu oponente si quieres sobrevivir. Enfréntate a enemigos en los modos competitivo y normal, así como en Deathmatch y Spike Rush.</p>
+                        <a href="https://playvalorant.com/es-mx/download/" class="somos__enlace trasicion">Descarga el juego</a>
+                    </div>
+                </div>
+            </article>
+            <div class="intermedio">
+            </div>
+            <article class="agentes">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 ">
+                            <img src="./img/agentes/omen.png" alt="Omen" class="personaje">
+                        </div>
+                        <div class="col-sm offset-md-2 col-md-6 offset-md-2 col-lg-6">
+                            <div class="info">
+                                <h2 class="info__titulo" data-aos="fade-up">Agentes</h2>
+                                <p class="info__texto" data-aos="fade-up">Más allá de las armas y las balas, podrás elegir a un agente dotado de habilidades versátiles, veloces y letales con las que crearás oportunidades para sobresalir.</p>
+                                <a href="./seccion/agentes.html" class="info__enlace ">Ver todos los agentes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="final">
+            </div>
+            <article class="mapas">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm offset-md-1 col-md-6 col-lg-5 ">
+                            <div class="desc">
+                                <h2 class="desc__titulo" data-aos="fade-up">Mapas</h2>
+                                <p class="desc__texto" data-aos="fade-up">Cada mapa es un campo de batalla para demostrar tu pensamiento creativo. Están diseñados especialmente para estrategias de equipo, jugadas espectaculares y momentos para remontar.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm col-md-5 offset-lg-1col-lg-6 ">
+                            <div>
+                                <a href="./seccion/mapas.html" class="enlace">Ver todos los mapas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <img src="./img/riot.jpg" alt="RIOT" class="footer__img">
+            <div class="footer__icons">
+                <ul class="lista">
+                    <li class="lista__item">
+                        <a href="#" class="lista__item__icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="lista__item">
+                        <a href="#" class="lista__item__icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="lista__item">
+                        <a href="#" class="lista__item__icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="lista__item">
+                        <a href="#" class="lista__item__icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="lista__item">
+                        <a href="#" class="lista__item__icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer__copyright"> &copy; 2021 RIOT GAMES.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

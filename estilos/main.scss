@@ -1,0 +1,988 @@
+@import "./parciales/navbar";
+@import "./parciales/responsive";
+
+.botones{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1.5rem;
+    margin-bottom: 40px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+    @include tablet{
+        font-size: 11px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+    body{
+        font-family: 'Roboto', sans-serif !important;
+    
+
+        .containerPrincipal{
+            max-width: 1920px;
+            margin: auto;
+        }
+    } 
+}
+
+.principal{
+    background-image: url(../img/equipo2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.presentacion{
+    background-color: #191919;
+    background-image: url(../img/fondoClaroo.jpg);
+}
+
+.somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__titulo{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        padding: 30px;
+
+        @include tablet{
+            font-size: 30px;
+        }
+
+    
+    }
+
+    &__texto{
+        font-size: 20px;
+        color: white;
+        width: 800px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+
+        @include tablet{
+            font-size: 16px;
+            width: 550px;
+        }
+
+        @include movil{
+            width: 400px;
+        }
+    }
+
+    &__enlace{
+        @extend .botones;
+
+        &:hover{
+            background-color: black;
+            color: white;
+            border: 2px solid #668CD9;
+        }
+
+    }
+
+}
+
+
+.agentes{
+    background-color: #191919;
+    background-image: url(../img/fondoClaroo.jpg);
+    background-size: cover;
+
+    @include movil{
+        height: 600px;
+    }
+
+}
+
+.personaje{
+    height: 600px;
+    padding: 30px;
+    margin: 30px;
+
+    @include tablet{
+        height: 450px;
+        margin: 30px 0;
+        padding: 0px;
+    }
+
+    @include movil{
+        display: none;
+    }
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+
+    @include movil{
+        padding-top: 50px;
+    }
+
+    &__titulo{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding: 30px;
+
+        @include tablet{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+
+        @include movil{
+            margin-top: 60px;
+        }
+        
+    }
+            
+    &__texto{
+        font-size: 18px;
+        color: white;
+        width: 50rem;
+        padding-top:30px;
+        margin-bottom: 40px;
+
+    
+
+        @include tablet{
+            width: auto;
+            font-size: 16px;
+    
+        }
+        @include movil{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+    }
+            
+    &__enlace{
+        @extend .botones;
+
+        &:hover{
+            background-color: black;
+            color: white;
+            border: 2px solid #668CD9;
+        }
+        
+    }
+}
+
+.intermedio{
+    background-image: url(../img/intermedio.png);
+    background-attachment: fixed;
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+
+    @include tablet{
+        background-position: center;
+    }
+
+    @include movil{
+        background-position:center;
+    }
+}
+
+.final{
+    background-image: url(../img/final.png);
+    background-attachment: fixed;
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+
+    @include tablet{
+        background-position:center;
+    }
+}
+
+.mapas{
+    background: #191919;
+    background-image: url(../img/fondoClaroo.jpg);
+    height: 600px;
+
+    @include tablet{
+        height: 500px;
+    }
+
+
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+
+    @include movil{
+        height: 400px;
+    }
+
+        &__titulo{
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            margin-top: 100px;
+
+            @include tablet{
+                font-size: 25px;
+                margin-top: 60px;
+            }
+
+        }
+
+        &__texto{
+            font-size: 18px;
+            color: white;
+            padding-top: 10rem;
+
+            @include tablet{
+                font-size: 16px;
+           
+            }
+
+            @include movil{
+                text-align: center;
+                width: 400px;
+            }
+        }
+        
+}
+
+.enlace{
+    @extend .botones;
+    position: relative;
+    left: 200px;
+    top: 300px;
+    
+    &:hover{
+        background-color: black;
+        color: white;
+        border: 2px solid #668CD9;
+    }
+
+    @include tablet{
+        left:50px;
+    }
+
+    @include movil{
+        top: 0px;
+        left: 130px;
+    }
+}
+
+.footer{
+    background:#191919;
+    height: 180px;
+    margin-bottom: 0px;
+
+    &__img{
+        position: relative;
+        left: 600px;
+        height: 10rem;
+
+        @include tablet{
+            left: 300px;
+        }
+
+        @include movil{
+            left: 120px;
+        }
+    }
+
+    &__icons{
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+    } 
+    
+    &__copyright{
+        text-align: center;
+        font-size: 11px;
+        color: #ECE7E1;
+        padding-top: 15px;
+    }
+
+}
+
+.lista{
+    text-align: center;
+    margin-top: 11px;
+
+    &__item{
+        list-style: none;
+        display: inline-block;
+
+        &__icon{
+            text-decoration: none;
+            font-size: 15px;
+            color: grey;
+            background-color: #191919;
+            border: 1px solid white;
+            border-radius: 100%;
+            margin: 0px 15px;
+            padding: 10px;
+
+            @include movil{
+                font-size: 10px;
+                margin: 0px 10px;
+            }
+        }
+                
+        &__icon:hover{
+        color: #191919;
+        background-color: white;
+        }
+            
+    }
+}
+
+.equipo{
+    background-image: url(../img/thumb-1920-1075657.jpg);
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+
+}
+
+.personajes{
+    background-image: url(../img/fondoClaroo.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__titulo{
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        position: sticky;  
+        
+        @include movil{
+            width: 400px;
+            text-align: center;
+        }
+    }
+
+    &__texto{
+        font-size: 20px;
+        width: 700px;
+        text-align: center;
+        color: white;
+        -webkit-text-stroke: 0.4px black;
+
+        @include tablet{
+            width: 600px;
+        }
+
+        @include movil{
+            width: 400px;
+        }
+    }
+}
+
+.carousel{
+    height: 100vh;
+    width: 1000px;
+    margin-top: 60px;
+
+    @include tablet{
+        width: 700px;
+    }
+
+    @include movil{
+        height: auto;
+        width: 420px;
+    }
+}
+
+.agente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @include movil{
+        flex-direction: column;
+    }
+
+    &__imagen{
+        height: 400px;
+        margin-top: 60px;
+
+        @include movil{
+            height: 400px;
+        }
+    }
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__titulo{
+        width:500px ;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        color: #ECE7E1;
+        padding: 30px; 
+
+        @include tablet{
+            font-size: 26px;
+        }
+
+        @include movil{
+            width: 200px;
+        }
+    }
+
+    &__tipo{
+        width:500px ;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #ECE7E1;
+        padding: 30px;
+
+        @include tablet{
+            font-size: 22px;
+        }
+
+        @include movil{
+            width: 200px;
+        }
+    }
+
+    &__texto{
+        width: 500px;
+        font-size: 18px;
+        color: #ECE7E1;
+        padding: 30px;
+
+        @include tablet{
+            font-size: 16px;
+        }
+
+        @include movil{
+            width:auto;
+        }
+    }
+}
+
+.previous{
+    font-size: 50px;
+    margin-right: 200px;
+}
+
+.next{
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+.controles{
+    opacity: 0;
+}
+
+.sector{
+    background-attachment: fixed;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__video{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    &__contenido{
+        position: relative;
+        bottom: 100px;
+        z-index: 1;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+
+       
+        &__titulo{
+            margin: 0;
+            padding: 0;
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            -webkit-text-stroke: 1px black;
+
+         
+        }
+
+    }    
+    
+}
+
+.escenarios{
+    background-image: url(../img/fondoClaroo.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+
+    @include movil{
+        height: 600px;
+    }
+}
+
+.mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+
+    @include tablet{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    @include movil{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+       
+        &__titulo{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            padding-top: 30px;
+
+            @include tablet{
+                padding-top: 0;
+            }
+
+            @include movil{
+                text-align: center;
+                padding-top: 0;
+            }
+           
+        }
+
+        &__desc{
+            width: 400px;
+            font-size: 18px;
+            color: white;
+
+            @include movil{
+                font-size: 16px;
+                text-align: center;
+                width: 325px;
+                padding-bottom: 40px;
+            }
+        }
+    }      
+        
+        
+    &__img{
+        height: 300px;
+        
+        @include movil{
+            height: 250px;
+            margin-bottom: 40px;
+        }
+    }
+    
+
+}
+
+.controles--mapa{
+    margin-top: 300px;
+}
+
+.armas{
+    background-image: url(../img/arsenal.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+    &__titulo{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+        text-transform: uppercase;
+        padding: 30px;
+    }
+
+    &__opciones{
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px;
+        background: none;
+        border: 1px black solid;
+
+        &__item{
+            background:none;
+     
+        }
+    }
+}
+
+.arsenal{
+    background-image: url(../img/fondoClaroo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__tipo{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    &__grilla{
+        display: grid;
+        grid-template-areas: 
+        "uno dos"
+        "tres cuatro"
+        "cinco none";
+        grid-template-columns: 600px 600px;
+        grid-row-gap:40px;
+        justify-content: center;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        @include movil{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+    }
+
+}
+
+.arma{
+    display: flex;
+    flex-direction: row;
+    transition-property: background-color, color ;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform-origin: left;
+    margin-bottom: 0px;
+
+    &:hover{
+        background-color: #191919;
+        color: #668CD9;
+        
+    }
+
+    @include movil{
+        flex-direction: column;
+        height: 450px;
+        margin-bottom: 30px;
+    }
+    
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        color: white;
+
+        &:hover{
+            color: #668CD9;
+        }
+
+        @include tablet{
+            margin-left: 30px;
+        }
+
+        @include movil{
+            width: 350px;
+        }
+
+            &__titulo{
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 20px;
+
+                @include movil{
+                    font-size: 16px;
+                }
+            }
+
+            &__texto{
+                font-size: 16px;
+                padding: 30px;
+            }
+    }
+
+    &__imagen{
+        height: 100px;
+        position: relative;
+        top: 100px;
+        
+        @include tablet{
+            height: 80px;
+            margin-left: 30px;
+        }
+
+        @include movil{
+            height: auto;
+            top: 20px;
+        }
+    }
+}
+
+.detalle{
+    display: none;
+}
+
+.mas{
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    @include tablet{
+        background-position: center;
+    }
+
+    @include movil{
+        background-position: center;
+    }
+
+}
+
+.noticias{
+    background-image: url(../img/fondoClaroo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+
+    @include tablet{
+        height: 1200px;
+    }
+
+    @include movil{
+        height: 1800px;
+    }
+
+    &__titulo{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        padding: 50px;
+    }
+}
+
+.noticia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 50px;
+
+    @include tablet{
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    @include movil{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    &--dos{
+        justify-content: flex-end;
+        margin-right: 50px;
+
+        @include movil{
+            margin-right: 0;
+        }
+    }
+
+    &__img{
+
+        &__uno{
+            height: 200px;
+        }
+    }
+
+    &__detalles{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.articulo{
+    color: white;
+    width: 200px;
+    margin-left: 30px;
+
+    &__fecha{
+        font-size: 16px;
+        display: block;
+    }
+
+    &__titulo{
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__desc{
+        font-size: 16px;
+    }
+
+    &__ver{
+
+        &__mas{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #668CD9;
+            padding: 10px;
+
+        }
+
+        &__mas:hover{
+            font-size: 18px;
+        }
+    }
+}
+
+.sec{
+    background-image: url(../img/tele.jpg);
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.otra{
+    background-image: url(../img/fondoClaroo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    
+    @include tablet{
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    @include movil{
+        height: 600px;
+    }
+
+}
+
+.comentarios{
+    width: 600px;
+    padding: 100px;
+
+    @include movil{
+        width: 400px;
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    &__titulo{
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 30px;
+    }
+}
+
+.form-group{
+    margin: 10px;
+
+    &__label{
+        font-size: 16px;
+        color: white;
+    }
+}
+
+.form-control{
+    font-size: 18px;
+}
