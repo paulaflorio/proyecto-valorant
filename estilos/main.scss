@@ -9,8 +9,9 @@
     font-size: 12px;
     font-weight: bold;
     color: black;
-    background-color: white;
+    background-color: white !important;
     border: 2px solid black;
+    border-radius: 2px;
     padding: 1.5rem;
     margin-bottom: 40px;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
@@ -102,6 +103,7 @@ html{
             background-color: black;
             color: white;
             border: 2px solid #668CD9;
+            transform: scale(1.01);
         }
 
     }
@@ -194,6 +196,7 @@ html{
             background-color: black;
             color: white;
             border: 2px solid #668CD9;
+            transform: scale(1.01);
         }
         
     }
@@ -295,6 +298,7 @@ html{
         background-color: black;
         color: white;
         border: 2px solid #668CD9;
+        transform: scale(1.01);
     }
 
     @include tablet{
@@ -456,7 +460,7 @@ html{
 }
 
 .controles{
-    opacity: 0;
+    top: 300px;
 }
 
 .sector{
@@ -918,5 +922,45 @@ html{
 }
 
 .form-control{
-    font-size: 18px;
+    font-size: 12px;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        &__img{
+            height: 40px;
+        }
+
+        &__desc{
+            font-size: 14px;
+            margin-left: 10px;
+            
+        }
+    }
+}
+
+.poderes{
+    @extend .botones;
+    width: 200px;
+    margin-left: 100px;
+
+    &:hover{
+        background-color: black !important;
+        color: white;
+        border: 2px solid #668CD9;
+        transform: scale(1.01);
+    }
+}
+
+.ventana{
+    background-color: #191919;
+    color: white;
+    font-size: 16px;
 }

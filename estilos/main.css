@@ -113,15 +113,16 @@
   background-color: white;
 }
 
-.botones, .somos__enlace, .info__enlace, .enlace {
+.botones, .somos__enlace, .info__enlace, .enlace, .poderes {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
   color: black;
-  background-color: white;
+  background-color: white !important;
   border: 2px solid black;
+  border-radius: 2px;
   padding: 1.5rem;
   margin-bottom: 40px;
   -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
@@ -129,7 +130,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .botones, .somos__enlace, .info__enlace, .enlace {
+  .botones, .somos__enlace, .info__enlace, .enlace, .poderes {
     font-size: 11px;
   }
 }
@@ -225,6 +226,8 @@ html body .containerPrincipal {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .agentes {
@@ -330,6 +333,8 @@ html body .containerPrincipal {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .intermedio {
@@ -446,6 +451,8 @@ html body .containerPrincipal {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 @media screen and (max-width: 768px) {
@@ -663,7 +670,7 @@ html body .containerPrincipal {
 }
 
 .controles {
-  opacity: 0;
+  top: 300px;
 }
 
 .sector {
@@ -1254,6 +1261,55 @@ html body .containerPrincipal {
 }
 
 .form-control {
-  font-size: 18px;
+  font-size: 12px;
+}
+
+.habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.habilidades__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.habilidades__item__img {
+  height: 40px;
+}
+
+.habilidades__item__desc {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.poderes {
+  width: 200px;
+  margin-left: 100px;
+}
+
+.poderes:hover {
+  background-color: black !important;
+  color: white;
+  border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.ventana {
+  background-color: #191919;
+  color: white;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
