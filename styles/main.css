@@ -1,3 +1,8 @@
+@font-face {
+  font-family: valorant;
+  src: url(valorant-font.ttf);
+}
+
 .nav {
   background: #191919;
   font-size: 16px;
@@ -7,6 +12,7 @@
   height: 8rem;
   position: fixed;
   z-index: 50;
+  font-family: valorant;
 }
 
 @media screen and (max-width: 768px) {
@@ -21,7 +27,7 @@
   color: white;
 }
 
-.brand__simbolo {
+.brand__symbol {
   height: 50px;
 }
 
@@ -37,6 +43,9 @@
 
 .links__item:hover {
   color: #668CD9 !important;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-bottom: 1px solid white;
 }
 
 .btn {
@@ -47,6 +56,7 @@
   background: #191919;
   height: 180px;
   margin-bottom: 0px;
+  border-top: 1px solid grey;
 }
 
 .footer__img {
@@ -80,17 +90,17 @@
   padding-top: 15px;
 }
 
-.lista {
+.list {
   text-align: center;
   margin-top: 11px;
 }
 
-.lista__item {
+.list__item {
   list-style: none;
   display: inline-block;
 }
 
-.lista__item__icon {
+.list__item__icon {
   text-decoration: none;
   font-size: 15px;
   color: grey;
@@ -102,35 +112,35 @@
 }
 
 @media screen and (max-width: 425px) {
-  .lista__item__icon {
+  .list__item__icon {
     font-size: 10px;
     margin: 0px 10px;
   }
 }
 
-.lista__item__icon:hover {
+.list__item__icon:hover {
   color: #191919;
   background-color: white;
 }
 
-.botones, .somos__enlace, .info__enlace, .enlace, .poderes {
+.botones, .we__text__link, .info__link, .link, .powers {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
-  background-color: white !important;
+  background-color: white;
   border: 2px solid black;
   border-radius: 2px;
-  padding: 1.5rem;
+  padding: 10px 20px;
   margin-bottom: 40px;
   -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 @media screen and (max-width: 768px) {
-  .botones, .somos__enlace, .info__enlace, .enlace, .poderes {
+  .botones, .we__text__link, .info__link, .link, .powers {
     font-size: 11px;
   }
 }
@@ -147,10 +157,10 @@ html {
 }
 
 html body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 
-html body .containerPrincipal {
+html body .main-container {
   max-width: 1920px;
   margin: auto;
 }
@@ -165,12 +175,10 @@ html body .containerPrincipal {
   width: 100%;
 }
 
-.presentacion {
+.presentation {
   background-color: #191919;
-  background-image: url(../img/fondoClaroo.jpg);
-}
-
-.somos {
+  background-image: url(../img/fondoClaro-modified.png);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,51 +186,95 @@ html body .containerPrincipal {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.somos__titulo {
-  font-size: 50px;
+.presentation__title {
+  font-size: 100px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  padding: 30px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .somos__titulo {
-    font-size: 30px;
+  .presentation__title {
+    font-size: 60px;
+    padding-top: 40px;
+    padding-left: 160px;
+    width: 600px;
   }
 }
 
-.somos__texto {
+@media screen and (max-width: 425px) {
+  .presentation__title {
+    padding-left: 20px;
+    width: 400px;
+  }
+}
+
+.we {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .we {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.we__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.we__text__desc {
   font-size: 20px;
+  font-weight: 500;
   color: white;
-  width: 800px;
-  text-align: center;
+  width: 600px;
+  text-align: left;
   padding: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .somos__texto {
-    font-size: 16px;
-    width: 550px;
+  .we__text__desc {
+    font-size: 17px;
+    width: 450px;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .somos__texto {
+  .we__text__desc {
     width: 400px;
   }
 }
 
-.somos__enlace:hover {
+.we__text__link {
+  margin-left: 200px;
+  width: 150px;
+}
+
+.we__text__link:hover {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
@@ -230,26 +282,67 @@ html body .containerPrincipal {
           transform: scale(1.01);
 }
 
-.agentes {
+@media screen and (max-width: 768px) {
+  .we__text__link {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .we__text__link {
+    margin-left: 120px;
+  }
+}
+
+.we__video {
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .we__video {
+    display: none;
+  }
+}
+
+.we__trailer {
+  display: none;
+  font-size: 20px;
+  color: #668CD9;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  position: relative;
+  top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .we__trailer {
+    display: block;
+    top: 0;
+  }
+}
+
+.agents {
   background-color: #191919;
-  background-image: url(../img/fondoClaroo.jpg);
+  background-image: url(../img/fondoClaro-modified.png);
   background-size: cover;
 }
 
 @media screen and (max-width: 425px) {
-  .agentes {
+  .agents {
     height: 600px;
   }
 }
 
-.personaje {
+.character {
   height: 600px;
   padding: 30px;
   margin: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .personaje {
+  .character {
     height: 450px;
     margin: 30px 0;
     padding: 0px;
@@ -257,7 +350,7 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 425px) {
-  .personaje {
+  .character {
     display: none;
   }
 }
@@ -279,34 +372,61 @@ html body .containerPrincipal {
   padding-top: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .info {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .info {
     padding-top: 50px;
   }
 }
 
-.info__titulo {
+.info__title {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 70px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   padding: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .info__titulo {
-    font-size: 25px;
+  .info__title {
+    font-size: 50px;
+    padding-top: 0;
     padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .info__titulo {
+  .info__title {
     margin-top: 60px;
   }
 }
 
-.info__texto {
+.info__subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .info__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .info__subtitle {
+    text-align: center;
+  }
+}
+
+.info__text {
   font-size: 18px;
   color: white;
   width: 50rem;
@@ -315,21 +435,20 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 768px) {
-  .info__texto {
+  .info__text {
     width: auto;
-    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .info__texto {
+  .info__text {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 
-.info__enlace:hover {
+.info__link:hover {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
@@ -337,7 +456,13 @@ html body .containerPrincipal {
           transform: scale(1.01);
 }
 
-.intermedio {
+@media screen and (max-width: 425px) {
+  .info__link {
+    margin-top: 20px;
+  }
+}
+
+.middle {
   background-image: url(../img/intermedio.png);
   background-attachment: fixed;
   background-position: initial;
@@ -348,18 +473,18 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 768px) {
-  .intermedio {
+  .middle {
     background-position: center;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .intermedio {
+  .middle {
     background-position: center;
   }
 }
 
-.final {
+.end {
   background-image: url(../img/final.png);
   background-attachment: fixed;
   background-position: initial;
@@ -370,19 +495,19 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 768px) {
-  .final {
+  .end {
     background-position: center;
   }
 }
 
-.mapas {
+.maps {
   background: #191919;
-  background-image: url(../img/fondoClaroo.jpg);
+  background-image: url(../img/fondoClaro-modified.png);
   height: 600px;
 }
 
 @media screen and (max-width: 768px) {
-  .mapas {
+  .maps {
     height: 500px;
   }
 }
@@ -398,7 +523,17 @@ html body .containerPrincipal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 550px;
+}
+
+@media screen and (max-width: 768px) {
+  .desc {
+    position: relative;
+    bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -407,68 +542,84 @@ html body .containerPrincipal {
   }
 }
 
-.desc__titulo {
+.desc__title {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 70px;
+  padding-bottom: 30px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .desc__titulo {
-    font-size: 25px;
-    margin-top: 60px;
-  }
-}
-
-.desc__texto {
-  font-size: 18px;
-  color: white;
-  padding-top: 10rem;
-}
-
-@media screen and (max-width: 768px) {
-  .desc__texto {
-    font-size: 16px;
+  .desc__title {
+    font-size: 50px;
+    margin-top: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .desc__texto {
+  .desc__title {
+    margin-top: 100px;
+    padding-bottom: 10px;
+  }
+}
+
+.desc__subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .desc__subtitle {
+    font-size: 20px;
+  }
+}
+
+.desc__text {
+  font-size: 18px;
+  color: white;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .desc__text {
     text-align: center;
     width: 400px;
   }
 }
 
-.enlace {
+.link {
   position: relative;
   left: 200px;
   top: 300px;
 }
 
-.enlace:hover {
+.link:hover {
   background-color: black;
   color: white;
   border: 2px solid #668CD9;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 @media screen and (max-width: 768px) {
-  .enlace {
+  .link {
     left: 50px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .enlace {
+  .link {
     top: 0px;
     left: 130px;
   }
 }
 
-.equipo {
+.team {
   background-image: url(../img/thumb-1920-1075657.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -478,8 +629,9 @@ html body .containerPrincipal {
   width: 100%;
 }
 
-.personajes {
-  background-image: url(../img/fondoClaroo.jpg);
+.characters {
+  background-color: #191919;
+  background-image: url(../img/fondoClaro-modified.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,24 +647,36 @@ html body .containerPrincipal {
           justify-content: center;
 }
 
-.personajes__titulo {
-  font-size: 60px;
+@media screen and (max-width: 768px) {
+  .characters {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .characters {
+    height: auto;
+  }
+}
+
+.characters__title {
+  font-size: 100px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
   color: white;
-  -webkit-text-stroke: 1px black;
   position: -webkit-sticky;
   position: sticky;
 }
 
 @media screen and (max-width: 425px) {
-  .personajes__titulo {
+  .characters__title {
     width: 400px;
     text-align: center;
   }
 }
 
-.personajes__texto {
+.characters__text {
   font-size: 20px;
   width: 700px;
   text-align: center;
@@ -521,13 +685,13 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 768px) {
-  .personajes__texto {
+  .characters__text {
     width: 600px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .personajes__texto {
+  .characters__text {
     width: 400px;
   }
 }
@@ -551,7 +715,7 @@ html body .containerPrincipal {
   }
 }
 
-.agente {
+.agent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,26 +731,27 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 425px) {
-  .agente {
+  .agent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 50px;
   }
 }
 
-.agente__imagen {
+.agent__img {
   height: 400px;
   margin-top: 60px;
 }
 
 @media screen and (max-width: 425px) {
-  .agente__imagen {
+  .agent__img {
     height: 400px;
   }
 }
 
-.contenido {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,48 +764,67 @@ html body .containerPrincipal {
           justify-content: space-between;
 }
 
-.contenido__titulo {
+.content__title {
   width: 500px;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 80px;
   font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Bebas Neue', cursive;
   color: #ECE7E1;
   padding: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .contenido__titulo {
-    font-size: 26px;
+  .content__title {
+    font-size: 80px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .contenido__titulo {
+  .content__title {
+    font-size: 70px;
     width: 200px;
   }
 }
 
-.contenido__tipo {
-  width: 500px;
+.content__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__type__name {
+  width: 200px;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 60px;
+  font-family: 'Bebas Neue', cursive;
   color: #ECE7E1;
-  padding: 30px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .contenido__tipo {
+  .content__type {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .contenido__tipo {
+  .content__type {
     width: 200px;
   }
 }
 
-.contenido__texto {
+.content__type__img {
+  height: 40px;
+  padding-left: 20px;
+}
+
+.content__type__img--controller {
+  padding-left: 80px;
+}
+
+.content__text {
   width: 500px;
   font-size: 18px;
   color: #ECE7E1;
@@ -648,15 +832,65 @@ html body .containerPrincipal {
 }
 
 @media screen and (max-width: 768px) {
-  .contenido__texto {
-    font-size: 16px;
+  .content__text {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .contenido__texto {
+  .content__text {
+    font-size: 18px;
     width: auto;
   }
+}
+
+.abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.abilities__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.abilities__item__img {
+  height: 40px;
+}
+
+.abilities__item__desc {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.powers {
+  width: 200px;
+  margin-left: 100px;
+}
+
+.powers:hover {
+  background-color: black !important;
+  color: white;
+  border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.window {
+  background-color: #191919;
+  color: white;
+  font-size: 16px;
 }
 
 .previous {
@@ -669,8 +903,14 @@ html body .containerPrincipal {
   margin-left: 200px;
 }
 
-.controles {
-  top: 300px;
+.controls--agents {
+  top: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .controls--agents {
+    top: 500px;
+  }
 }
 
 .sector {
@@ -907,7 +1147,9 @@ html body .containerPrincipal {
 .arsenal__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "uno dos" "tres cuatro" "cinco none";
+      grid-template-areas: "uno dos"
+ "tres cuatro"
+ "cinco none";
   -ms-grid-columns: 600px 600px;
       grid-template-columns: 600px 600px;
   grid-row-gap: 40px;
@@ -1262,54 +1504,5 @@ html body .containerPrincipal {
 
 .form-control {
   font-size: 12px;
-}
-
-.habilidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.habilidades__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 20px;
-}
-
-.habilidades__item__img {
-  height: 40px;
-}
-
-.habilidades__item__desc {
-  font-size: 14px;
-  margin-left: 10px;
-}
-
-.poderes {
-  width: 200px;
-  margin-left: 100px;
-}
-
-.poderes:hover {
-  background-color: black !important;
-  color: white;
-  border: 2px solid #668CD9;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
-.ventana {
-  background-color: #191919;
-  color: white;
-  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */

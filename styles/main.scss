@@ -1,23 +1,24 @@
-@import "./parciales/navbar";
-@import "./parciales/responsive";
-@import "./parciales/footer";
+@import "./partial/navbar";
+@import "./partial/responsive";
+@import "./partial/footer";
 
 .botones{
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight:bold;
     color: black;
-    background-color: white !important;
+    background-color: white;
     border: 2px solid black;
     border-radius: 2px;
-    padding: 1.5rem;
+    padding: 10px 20px;
     margin-bottom: 40px;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 
     @include tablet{
         font-size: 11px;
+        
     }
 }
 
@@ -31,10 +32,10 @@ html{
     font-size: 62.5%;
 
     body{
-        font-family: 'Roboto', sans-serif !important;
+        font-family: 'Nunito Sans', sans-serif !important;
     
 
-        .containerPrincipal{
+        .main-container{
             max-width: 1920px;
             margin: auto;
         }
@@ -52,68 +53,128 @@ html{
 
 }
 
-.presentacion{
+.presentation{
     background-color: #191919;
-    background-image: url(../img/fondoClaroo.jpg);
-}
-
-.somos{
+    background-image: url(../img/fondoClaro-modified.png);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 
-
-    &__titulo{
-        font-size: 50px;
+    &__title{
+        font-size: 100px;
         font-weight: bold;
         color: white;
         text-transform: uppercase;
-        padding: 30px;
-
-        @include tablet{
-            font-size: 30px;
-        }
-
-    
-    }
-
-    &__texto{
-        font-size: 20px;
-        color: white;
-        width: 800px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        font-family: 'Bebas Neue', cursive;
         text-align: center;
-        padding: 30px;
-        margin-bottom: 30px;
 
         @include tablet{
-            font-size: 16px;
-            width: 550px;
+            font-size: 60px;
+            padding-top: 40px;
+            padding-left: 160px;
+            width: 600px;
         }
 
         @include movil{
+            padding-left: 20px;
             width: 400px;
         }
     }
+}
 
-    &__enlace{
-        @extend .botones;
+.we{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-        &:hover{
-            background-color: black;
-            color: white;
-            border: 2px solid #668CD9;
-            transform: scale(1.01);
+    @include tablet{
+        flex-direction: column;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+
+        &__desc{
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+                width: 600px;
+                text-align: left;
+                padding: 30px;
+                margin-bottom: 30px;
+        
+                @include tablet{
+                    font-size: 17px;
+                    width: 450px;
+                    padding: 0;
+                }
+        
+                @include movil{
+                    width: 400px;
+                }
+            
         }
 
+        &__link{
+            @extend .botones;
+            margin-left: 200px;
+            width: 150px;
+
+            &:hover{
+                background-color: black;
+                color: white;
+                border: 2px solid #668CD9;
+                transform: scale(1.01);
+            }
+
+            @include tablet{
+                margin-left: 150px;
+            }
+            
+            @include movil{
+                margin-left: 120px;
+            }
+    
+        }
+    } 
+    
+    &__video{
+        width: 500px;
+
+        @include tablet{
+            display: none;
+        }
+
+       
+    
     }
+
+    &__trailer{
+        display: none;
+        font-size: 20px;
+        color: #668CD9;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+        transform: scale(1.1);
+        position: relative;
+        top: 50px;
+
+        @include tablet{
+            display: block;
+            top: 0;
+        }
+    }
+
 
 }
 
 
-.agentes{
+.agents{
     background-color: #191919;
-    background-image: url(../img/fondoClaroo.jpg);
+    background-image: url(../img/fondoClaro-modified.png);
     background-size: cover;
 
     @include movil{
@@ -122,7 +183,7 @@ html{
 
 }
 
-.personaje{
+.character{
     height: 600px;
     padding: 30px;
     margin: 30px;
@@ -146,19 +207,25 @@ html{
     align-items: center;
     padding-top: 100px;
 
+    @include tablet{
+        margin-bottom: 50px;
+    }
+
     @include movil{
         padding-top: 50px;
     }
 
-    &__titulo{
+    &__title{
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 70px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         color: white;
         padding: 30px;
 
         @include tablet{
-            font-size: 25px;
+            font-size: 50px;
+            padding-top: 0;
             padding-bottom: 10px;
         }
 
@@ -167,8 +234,23 @@ html{
         }
         
     }
+
+    &__subtitle{
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+
+        @include tablet{
+            font-size: 20px;
+        }
+
+        @include movil{
+            text-align: center;
+        }
+    }
             
-    &__texto{
+    &__text{
         font-size: 18px;
         color: white;
         width: 50rem;
@@ -179,17 +261,17 @@ html{
 
         @include tablet{
             width: auto;
-            font-size: 16px;
     
         }
+
         @include movil{
             text-align: center;
-            margin-top: 50px;
-            margin-bottom: 100px;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
     }
             
-    &__enlace{
+    &__link{
         @extend .botones;
 
         &:hover{
@@ -198,11 +280,15 @@ html{
             border: 2px solid #668CD9;
             transform: scale(1.01);
         }
+
+        @include movil{
+            margin-top: 20px;
+        }
         
     }
 }
 
-.intermedio{
+.middle{
     background-image: url(../img/intermedio.png);
     background-attachment: fixed;
     background-position:initial;
@@ -220,7 +306,7 @@ html{
     }
 }
 
-.final{
+.end{
     background-image: url(../img/final.png);
     background-attachment: fixed;
     background-position:initial;
@@ -234,9 +320,9 @@ html{
     }
 }
 
-.mapas{
+.maps{
     background: #191919;
-    background-image: url(../img/fondoClaroo.jpg);
+    background-image: url(../img/fondoClaro-modified.png);
     height: 600px;
 
     @include tablet{
@@ -250,35 +336,57 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 550px;
+
+    @include tablet{
+        position: relative;
+        bottom: 50px;
+    }
 
     @include movil{
         height: 400px;
     }
 
-        &__titulo{
+        &__title{
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 70px;
+            padding-bottom: 30px;
             font-weight: bold;
+            font-family: 'Bebas Neue', cursive;
             color: white;
             margin-top: 100px;
+            
 
             @include tablet{
-                font-size: 25px;
-                margin-top: 60px;
+                font-size: 50px;
+                margin-top: 0;
+            }
+
+            @include movil{
+                margin-top: 100px;
+                padding-bottom: 10px;
             }
 
         }
 
-        &__texto{
-            font-size: 18px;
+        &__subtitle{
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: bold;
             color: white;
-            padding-top: 10rem;
 
             @include tablet{
-                font-size: 16px;
-           
+                font-size: 20px;
             }
+        }
+        
+
+        &__text{
+            font-size: 18px;
+            color: white;   
+            padding-top: 30px;
+
 
             @include movil{
                 text-align: center;
@@ -288,7 +396,7 @@ html{
         
 }
 
-.enlace{
+.link{
     @extend .botones;
     position: relative;
     left: 200px;
@@ -298,7 +406,7 @@ html{
         background-color: black;
         color: white;
         border: 2px solid #668CD9;
-        transform: scale(1.01);
+        transform: scale(2);
     }
 
     @include tablet{
@@ -311,7 +419,7 @@ html{
     }
 }
 
-.equipo{
+.team{
     background-image: url(../img/thumb-1920-1075657.jpg);
     background-attachment: fixed;
     background-position:center;
@@ -322,19 +430,28 @@ html{
 
 }
 
-.personajes{
-    background-image: url(../img/fondoClaroo.jpg);
+.characters{
+    background-color: #191919;
+    background-image: url(../img/fondoClaro-modified.png);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    &__titulo{
-        font-size: 60px;
+    @include tablet{
+        height: 1000px;
+    }
+
+    @include movil{
+        height: auto;
+    }
+
+    &__title{
+        font-size: 100px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         text-transform: uppercase;
         color: white;
-        -webkit-text-stroke: 1px black;
         position: sticky;  
         
         @include movil{
@@ -343,7 +460,7 @@ html{
         }
     }
 
-    &__texto{
+    &__text{
         font-size: 20px;
         width: 700px;
         text-align: center;
@@ -375,7 +492,7 @@ html{
     }
 }
 
-.agente{
+.agent{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -383,9 +500,10 @@ html{
 
     @include movil{
         flex-direction: column;
+        margin-bottom: 50px;
     }
 
-    &__imagen{
+    &__img{
         height: 400px;
         margin-top: 60px;
 
@@ -395,34 +513,44 @@ html{
     }
 }
 
-.contenido{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    &__titulo{
+    &__title{
         width:500px ;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 80px;
         font-weight: bold;
+        letter-spacing: 4px;
+        font-family: 'Bebas Neue', cursive;
         color: #ECE7E1;
         padding: 30px; 
 
         @include tablet{
-            font-size: 26px;
+            font-size: 80px;
         }
 
         @include movil{
+            font-size: 70px;
             width: 200px;
         }
     }
 
-    &__tipo{
-        width:500px ;
-        text-transform: uppercase;
-        font-size: 25px;
-        color: #ECE7E1;
-        padding: 30px;
+    &__type{
+
+        display: flex;
+        
+
+        &__name{
+            width:200px ;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: 'Bebas Neue', cursive;
+            color: #ECE7E1;
+            padding-left: 30px;
+        }
 
         @include tablet{
             font-size: 22px;
@@ -431,22 +559,72 @@ html{
         @include movil{
             width: 200px;
         }
+
+        &__img{
+            height: 40px;
+            padding-left: 20px;
+
+            &--controller{
+                padding-left: 80px;
+            }
+        }
     }
 
-    &__texto{
+    &__text{
         width: 500px;
         font-size: 18px;
         color: #ECE7E1;
         padding: 30px;
 
         @include tablet{
-            font-size: 16px;
+            font-size: 20px;
         }
 
         @include movil{
+            font-size: 18px;
             width:auto;
         }
     }
+}
+
+.abilities{
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        &__img{
+            height: 40px;
+        }
+
+        &__desc{
+            font-size: 14px;
+            margin-left: 10px;
+            
+        }
+    }
+}
+
+.powers{
+    @extend .botones;
+    width: 200px;
+    margin-left: 100px;
+
+    &:hover{
+        background-color: black !important;
+        color: white;
+        border: 2px solid #668CD9;
+        transform: scale(1.01);
+    }
+}
+
+.window{
+    background-color: #191919;
+    color: white;
+    font-size: 16px;
 }
 
 .previous{
@@ -459,8 +637,17 @@ html{
     margin-left: 200px;
 }
 
-.controles{
-    top: 300px;
+.controls{
+
+    &--agents{
+
+        top: 400px;
+
+        @include tablet{
+            top: 500px;
+        }
+    }
+    
 }
 
 .sector{
@@ -925,42 +1112,3 @@ html{
     font-size: 12px;
 }
 
-.habilidades{
-    display: flex;
-    flex-direction: column;
-
-    &__item{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-
-        &__img{
-            height: 40px;
-        }
-
-        &__desc{
-            font-size: 14px;
-            margin-left: 10px;
-            
-        }
-    }
-}
-
-.poderes{
-    @extend .botones;
-    width: 200px;
-    margin-left: 100px;
-
-    &:hover{
-        background-color: black !important;
-        color: white;
-        border: 2px solid #668CD9;
-        transform: scale(1.01);
-    }
-}
-
-.ventana{
-    background-color: #191919;
-    color: white;
-    font-size: 16px;
-}

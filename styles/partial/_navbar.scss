@@ -1,5 +1,10 @@
 @import "./responsive";
 
+@font-face {
+    font-family: valorant;
+    src: url(valorant-font.ttf);
+}
+
 .nav{
     background:#191919;
     font-size: 16px;
@@ -9,6 +14,8 @@
     height: 8rem;
     position: fixed;
     z-index: 50;
+    font-family: valorant;
+
 
     @include tablet {
         height: auto;
@@ -20,7 +27,7 @@
     text-decoration: none;
     color: white;
 
-    &__simbolo{
+    &__symbol{
         height: 50px;
     }
 }
@@ -38,6 +45,8 @@
 
     &__item:hover{
     color:  #668CD9 !important;
+    transform: scale(1.1);
+    border-bottom: 1px solid white;
     }
 }
 
