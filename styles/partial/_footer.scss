@@ -9,15 +9,15 @@
 
     &__img{
         position: relative;
-        left: 600px;
+        left: 625px;
         height: 10rem;
 
         @include tablet{
-            left: 300px;
+            left: 330px;
         }
 
         @include movil{
-            left: 120px;
+            left: 165px;
         }
     }
 

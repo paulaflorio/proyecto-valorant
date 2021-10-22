@@ -61,19 +61,19 @@
 
 .footer__img {
   position: relative;
-  left: 600px;
+  left: 625px;
   height: 10rem;
 }
 
 @media screen and (max-width: 768px) {
   .footer__img {
-    left: 300px;
+    left: 330px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .footer__img {
-    left: 120px;
+    left: 165px;
   }
 }
 
@@ -667,6 +667,7 @@ html body .main-container {
   color: white;
   position: -webkit-sticky;
   position: sticky;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 425px) {
@@ -913,6 +914,10 @@ html body .main-container {
   }
 }
 
+.controls--maps {
+  top: 500px;
+}
+
 .sector {
   background-attachment: fixed;
 }
@@ -941,7 +946,7 @@ html body .main-container {
   pointer-events: none;
 }
 
-.banner__contenido {
+.banner__content {
   position: relative;
   bottom: 100px;
   z-index: 1;
@@ -950,18 +955,19 @@ html body .main-container {
   text-align: center;
 }
 
-.banner__contenido__titulo {
+.banner__content__title {
   margin: 0;
   padding: 0;
-  font-size: 60px;
+  font-size: 100px;
+  font-family: 'Bebas Neue', cursive;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: #191919;
 }
 
 .escenarios {
-  background-image: url(../img/fondoClaroo.jpg);
+  background-color: #191919;
+  background-image: url(../img/fondoClaro-modified.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,8 +1040,9 @@ html body .main-container {
 }
 
 .mapa__contenido__titulo {
-  font-size: 30px;
+  font-size: 70px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   padding-top: 30px;
 }
@@ -1147,9 +1154,7 @@ html body .main-container {
 .arsenal__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "uno dos"
- "tres cuatro"
- "cinco none";
+      grid-template-areas: "uno dos" "tres cuatro" "cinco none";
   -ms-grid-columns: 600px 600px;
       grid-template-columns: 600px 600px;
   grid-row-gap: 40px;
