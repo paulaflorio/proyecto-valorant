@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Descripcion y Keywords-->
-    <meta name="description" content="Elige tu arma y ve sus especificaciones. ¿Prefieres velocidad, poder o control? ">
+    <meta name="description" content="A weapon for every situation. Do you buy for speed, power, or control?">
     <meta name="keywords" content="Classic, Shorty, Frenzy, Ghost, Sheriff, Stinger, Spectre, Bucky, Jugde, Bulldog, Guardian, Phantom, Vandal, Marshal, Operator, Ares, Odin, Cuchillo">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -48,181 +48,181 @@
                 </div>
             </nav>
         </header>
-        <section class="armas">
-            <h1 class="armas__titulo">Elige tu arma</h1>
-            <select name="armas" id="tipo-arma" class="armas__opciones">
+        <section class="weapons">
+            <h1 class="weapons__title">Choose your weapon</h1>
+            <select name="weapons" id="weapon-type" class="weapons__options">
                 <option selected disabled>Arsenal</option>
-                <option value="todas" class="armas__opciones__item">Todas las armas</option>
-                <option value="mano" class="armas__opciones__item">Armas de mano</option>
-                <option value="subfusiles" class="armas__opciones__item">Subfusiles</option>
-                <option value="escopetas" class="armas__opciones__item">Escopetas</option>
-                <option value="rifles" class="armas__opciones__item">Rifles</option>
-                <option value="fusiles" class="armas__opciones__item">Fusiles</option>
-                <option value="pesadas" class="armas__opciones__item">Armas pesadas</option>
-                <option value="cuerpo" class="armas__opciones__item">Cuerpo a cuerpo</option>
+                <option value="all" class="weapons__options__item">All weapons</option>
+                <option value="sidearms" class="weapons__options__item">Sidearms</option>
+                <option value="smgs" class="weapons__options__item">SMGS</option>
+                <option value="shotguns" class="weapons__options__item">Shotguns</option>
+                <option value="rifles" class="weapons__options__item">Rifles</option>
+                <option value="snipers" class="weapons__options__item">Snipers</option>
+                <option value="heavies" class="weapons__options__item">Heavies</option>
+                <option value="melee" class="weapons__options__item">Melee</option>
             </select>
         </section>
         <main>
-            <div id="detalle-armas" class="todas">
-                <article class="arsenal todas mano detalle">
-                    <h2 class="arsenal__tipo" >Armas de mano</h2>               
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Classic</h3>
-                                <p class="arma__desc__texto" >El disparo principal realiza disparos precisos al estar quieto y tiene un modo de disparo alternativo para encuentros cercanos.</p>
+            <div id="weapons-details" class="all">
+                <article class="arsenal all sidearms detail">
+                    <h2 class="arsenal__type" >Sidearms</h2>               
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Classic.</h3>
+                                <p class="weapon__desc__text">Primary fire lands precise shots when still, and is equipped with an alternate burst-firing mode for close encounters.</p>
                             </div>
-                            <img src="../img/armas/classic.png" alt="Calssic" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/classic.png" alt="Calssic" class="weapon__img">
                         </div>
-                        <div class="arma">
-                            <div class="arma__desc" id="armaDos">
-                                <h3 class="arma__desc__titulo" >Shorty</h3>
-                                <p class="arma__desc__texto" >Una escopeta de cañón corto y ágil; letal a corta distancia, pero solo puede disparar dos veces antes de tener que recargarla. Se combina bien con las armas de largo alcance.</p>
+                        <div class="weapon">
+                            <div class="weapon__desc" id="two">
+                                <h3 class="weapon__desc__title" >Shorty.</h3>
+                                <p class="weapon__desc__text" >A nimble, short barrel shotgun that is deadly at close range but can only fire twice before needing to reload. Pairs well with long range weapons.</p>
                             </div>
-                            <img src="../img/armas/shorty.png" alt="Shorty" class="arma__imagen" id="imagenArma">                   
+                            <img src="../img/armas/shorty.png" alt="Shorty" class="weapon__img">                   
                         </div>
-                        <div class="arma" id="armaTres">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Frenzy</h3>
-                                <p class="arma__desc__texto" >Ametralladora ligera que destaca al disparar en movimiento. Su alta velocidad de disparo puede llegar a ser difícil de controlar, así que prueba ráfagas cortas a media distancia.</p>
+                        <div class="weapon" id="three">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Frenzy.</h3>
+                                <p class="weapon__desc__text" >Lightweight machine pistol that excels at firing on the move. It’s high rate-of-fire can be difficult to control, so try short bursts at medium ranges.</p>
                             </div>
-                            <img src="../img/armas/frenzy.png" alt="Frenzy" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/frenzy.png" alt="Frenzy" class="weapon__img">
                         </div>               
-                        <div class="arma" id="armaCuatro">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Ghost</h3>
-                                <p class="arma__desc__texto" >La Ghost es precisa y tiene un gran cargador en caso de que falles. Los objetivos distantes requieren una tasa de fuego controlada. Presiona rápidamente el gatillo cuando veas lo blanco de sus ojos.</p>
+                        <div class="weapon" id="four">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Ghost.</h3>
+                                <p class="weapon__desc__text" >The Ghost is accurate and carries a large magazine if you miss. Distant targets require a controlled fire rate. Quickly tap the trigger when you can see the whites of their eyes.</p>
                             </div>
-                            <img src="../img/armas/ghost.png" alt="Ghost" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/ghost.png" alt="Ghost" class="weapon__img">
                         </div>
                               
-                        <div class="arma" id="armaCinco">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Sheriff</h3>
-                                <p class="arma__desc__texto" >Sus balas de alto impacto tienen mucho retroceso y se necesitan muchas agallas para dominarlas. Si dominas la Sheriff correctamente, tus enemigos sabrán que no tenían oportunidad.</p>
+                        <div class="weapon" id="five">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Sheriff.</h3>
+                                <p class="weapon__desc__text" >It’s high-impact rounds pack a ton of recoil and require true grit to master. Wield the Sheriff right, and your enemies will know they were expendable.</p>
                             </div>
-                            <img src="../img/armas/sheriff.png" alt="Sheriff" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/sheriff.png" alt="Sheriff" class="weapon__img">
                         </div>  
                     </div>
                 </article>
-                <article class="arsenal todas subfusiles detalle">
-                    <h2 class="arsenal__tipo">Subfusiles</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Stinger</h3>
-                                <p class="arma__desc__texto" >Este subfusil tiene mayor potencia a corta y larga distancia que los demás, pero a costa de velocidad de disparo y movilidad. Su cargador de 20 rondas se desperdicia en ráfagas llenas de retroceso, pero asesta golpes letales a media distancia con la mira y fuego controlado.</p>
+                <article class="arsenal all smgs detail">
+                    <h2 class="arsenal__type">smgs</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Stinger.</h3>
+                                <p class="weapon__desc__text" >This SMG is more potent at medium to long range than its counterparts, but at the cost of firing rate and mobility. The 20-round mag gets wasted in recoil-filled sprays, but lands lethal blows at medium distances with ADS and controlled fire.</p>
                             </div>
-                            <img src="../img/armas/stinger.png" alt="Stinger" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/stinger.png" alt="Stinger" class="weapon__img">
                         </div>
-                        <div class="arma" id="armaDos">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo" >Spectre</h3>
-                                <p class="arma__desc__texto" >Un arma todoterreno con gran equilibrio de daño, velocidad de disparo y precisión, tanto a corta como larga distancia.Acecha los rincones de cada mapa y solo requiere que apuntes firme para derribar a los enemigos a larga distancia.</p>
+                        <div class="weapon" id="two">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title" >Spectre.</h3>
+                                <p class="weapon__desc__text" >A jack-of-all-trades weapon with a great balance of damage, fire rate, and accuracy—at both short and mid range. It haunts the corners of every map and requires only steady aim to drop foes at long distance.</p>
                             </div>
-                            <img src="../img/armas/spectre.png" alt="Spectre" class="arma__imagen" id="imagenArma">
-                        </div>
-                    </div>
-                </article>
-                <article class="arsenal todas escopetas detalle">
-                    <h2 class="arsenal__tipo">Escopetas</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Bucky</h3>
-                                <p class="arma__desc__texto">Pesada, pero estable. El disparo principal de la Bucky es para mantener las esquinas cerradas o disparar a corta distancia. El disparo secundario sirve para los objetivos a medio alcance.</p>
-                            </div>
-                            <img src="../img/armas/bucky.png" alt="Bucky" class="arma__imagen"  id="imagenArma">
-                        </div>
-                        <div class="arma" id="armaDos">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Jugde</h3>
-                                <p class="arma__desc__texto">La Judge es estable con disparos premeditados, pero volátil si la disparas rápidamente. El disparo principal ataca a los objetivos a corta distancia y tendrás que ser firme para alcanzar todo lo que esté más allá de la longitud de tu brazo.</p>
-                            </div>
-                            <img src="../img/armas/judge.png" alt="Jugde" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/spectre.png" alt="Spectre" class="weapon__img">
                         </div>
                     </div>
                 </article>
-                <article class="arsenal todas rifles detalle">
-                    <h2 class="arsenal__tipo">Rifles</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Bulldog</h3>
-                                <p class="arma__desc__texto">Es una bestia a la hora de intercambiar fuego. El disparo alternativo te permite utilizar una mira y lanzar ráfagas cortas y precisas a todo aquel que intente cazarte a media o larga distancia.</p>
+                <article class="arsenal all shotguns detail">
+                    <h2 class="arsenal__type">shotguns</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Bucky.</h3>
+                                <p class="weapon__desc__text">Heavy but stable, Bucky’s primary fire is for holding tight corners or charging close quarters. Alternate fire strikes targets at medium range.</p>
                             </div>
-                            <img src="../img/armas/bulldog.png" alt="Bulldog" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/bucky.png" alt="Bucky" class="weapon__img">
                         </div>
-                        <div class="arma" id="armaDos">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Guardian</h3>
-                                <p class="arma__desc__texto">Es el rifle para los tiradores entrenados. Más pesado y menos móvil en comparación con otros rifles, pero más preciso y potente. Comienza la cacería de tus enemigos a media y larga distancia.</p>
+                        <div class="weapon" id="two">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Jugde.</h3>
+                                <p class="weapon__desc__text">The Judge is stable at the stand but volatile when fired rapidly. Primary fire hammers short range targets and you’ll need to be steady to nail anything beyond an arm's-length.</p>
                             </div>
-                            <img src="../img/armas/guardian.png" alt="Guardian" class="arma__imagen" id="imagenArma">
-                        </div>
-                        <div class="arma" id="armaTres">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Phantom</h3>
-                                <p class="arma__desc__texto">Un arma balanceada para disparos estables y prolongados. Úsala en automático contra cualquiera que te ponga a prueba de cerca. Por otro lado, sus ráfagas cortas y controladas permiten derribar enemigos a cualquier distancia. Funciona mejor cuando no estás en movimiento.</p>
-                            </div>
-                            <img src="../img/armas/phantom.png" alt="Phantom" class="arma__imagen" id="imagenArma">
-                        </div>
-                        <div class="arma" id="armaCuatro">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Vandal</h3>
-                                <p class="arma__desc__texto">Esta máquina de precisión es feroz en pequeñas ráfagas. Sin embargo, su disparo extendido da como resultado menor estabilidad. La Vandal tiene un alto daño a distancia y recompensa a quienes se enfocan en un solo disparo a la cabeza.</p>
-                            </div>
-                            <img src="../img/armas/vandal.png" alt="Vandal" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/judge.png" alt="Jugde" class="weapon__img">
                         </div>
                     </div>
                 </article>
-                <article class="arsenal todas fusiles detalle">
-                    <h2 class="arsenal__tipo">Rifles De Francotirador</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno"> 
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">MARSHAL</h3>
-                                <p class="arma__desc__texto">Un ágil rifle de palanca con un solo zoom que puede mantener a raya a los enemigos. Una velocidad de disparo lenta significa que tienes que dar en el blanco o quedarás expuesto a los ataques.</p>
+                <article class="arsenal all rifles detail">
+                    <h2 class="arsenal__type">Rifles</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Bulldog.</h3>
+                                <p class="weapon__desc__text">A surefire beast when you can pick your shots. Alt. fire let’s you ADS and spew accurate, short bursts at anyone who tries you from medium to long-range.</p>
                             </div>
-                            <img src="../img/armas/marshal.png" alt="Marshall" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/bulldog.png" alt="Bulldog" class="weapon__img">
                         </div>
-                        <div class="arma" id="armaDos">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">OPERATOR</h3>
-                                <p class="arma__desc__texto">Un rifle de francotirador con doble zoom de alta potencia. Extremadamente inmóvil, pero sus poderosas balas podrían devastar a un equipo con un solo disparo.</p>
+                        <div class="weapon" id="two">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Guardian.</h3>
+                                <p class="weapon__desc__text">The designated marksman rifle. Heavier and less mobile relative to other rifles but precise and powerful. Headhunt when enemies appear at medium to long distances.</p>
                             </div>
-                            <img src="../img/armas/operator.png" alt="Operator" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/guardian.png" alt="Guardian" class="weapon__img">
                         </div>
-                    </div>
-                </article>
-                <article class="arsenal todas pesadas detalle">
-                    <h2 class="arsenal__tipo">Armas Pesadas</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma" id="armaUno">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Ares</h3>
-                                <p class="arma__desc__texto">El enorme cargador del Ares significa que sobresale en el fuego continuo e inflige daño masivo a grupos de enemigos.</p>
+                        <div class="weapon" id="three">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Phantom.</h3>
+                                <p class="weapon__desc__text">Go full auto for anyone who tests you up close and short controlled bursts scramble enemies from anywhere. Best when fired while stationary.</p>
                             </div>
-                            <img src="../img/armas/ares.png" alt="Ares" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/phantom.png" alt="Phantom" class="weapon__img">
                         </div>
-                        <div class="arma" id="armaDos">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Odin</h3>
-                                <p class="arma__desc__texto">Disparos continuos de alto daño con una gran estabilidad. Pulveriza a los enemigos a corta distancia y usa el disparo alternativo para convertirte en una torreta viviente.</p>
+                        <div class="weapon" id="four">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Vandal.</h3>
+                                <p class="weapon__desc__text">Extended fire results in less stability, however. The Vandal retains high damage over distance and rewards those who focus single shots at a target’s head.</p>
                             </div>
-                            <img src="../img/armas/odin.png" alt="Odin" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/vandal.png" alt="Vandal" class="weapon__img">
                         </div>
                     </div>
                 </article>
-                <article class="arsenal todas cuerpo detalle">
-                    <h2 class="arsenal__tipo">Melee</h2>
-                    <div class="arsenal__grilla">
-                        <div class="arma">
-                            <div class="arma__desc">
-                                <h3 class="arma__desc__titulo">Cuchillo</h3>
-                                <p class="arma__desc__texto">Cuando tengas dudas o se te acaben las balas, atácalos con esto. Te permite correr rápido, destruir objetos o lanzárselo a los enemigos por la espalda con el disparo alternativo.</p>
+                <article class="arsenal all snipers detail">
+                    <h2 class="arsenal__type">snipers</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one"> 
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">MARSHAL.</h3>
+                                <p class="weapon__desc__text">A nimble lever-action sniper rifle with a single zoom that can keep bullish enemies at bay. A slow rate of fire means you have to either hit the mark or leave yourself open to attacks.</p>
                             </div>
-                            <img src="../img/armas/cuchillo.png" alt="Cuchillo" class="arma__imagen" id="imagenArma">
+                            <img src="../img/armas/marshal.png" alt="Marshall" class="weapon__img">
+                        </div>
+                        <div class="weapon" id="two">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">OPERATOR.</h3>
+                                <p class="weapon__desc__text">A fierce bolt-action sniper rifle with high-powered dual zoom. Extremely immobile but fires an incredibly powerful round that can devastate a team with one shot.</p>
+                            </div>
+                            <img src="../img/armas/operator.png" alt="Operator" class="weapon__img">
+                        </div>
+                    </div>
+                </article>
+                <article class="arsenal all heavies detail">
+                    <h2 class="arsenal__type">heavies</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon" id="one">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Ares.</h3>
+                                <p class="weapon__desc__text">The Ares’ large magazine means it excels at suppressive fire or dealing heavy damage to clustered groups.</p>
+                            </div>
+                            <img src="../img/armas/ares.png" alt="Ares" class="weapon__img">
+                        </div>
+                        <div class="weapon" id="two">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Odin.</h3>
+                                <p class="weapon__desc__text">Suppressive, high damage fire with surprising stability. Spray enemies at short range and use alt. fire to make yourself a living turret.</p>
+                            </div>
+                            <img src="../img/armas/odin.png" alt="Odin" class="weapon__img">
+                        </div>
+                    </div>
+                </article>
+                <article class="arsenal all melee detail">
+                    <h2 class="arsenal__type">Melee</h2>
+                    <div class="arsenal__grid">
+                        <div class="weapon">
+                            <div class="weapon__desc">
+                                <h3 class="weapon__desc__title">Tactical Knife.</h3>
+                                <p class="weapon__desc__text">When in doubt or out of bullets, hit them with this. Lets you run fast, destroy objects faster, or one-shot enemies in the back with alt. fire.</p>
+                            </div>
+                            <img src="../img/armas/cuchillo.png" alt="Cuchillo" class="weapon__img">
                         </div>
                     </div>
                 </article>
@@ -275,9 +275,9 @@
     crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            $("#tipo-arma").change(function(){
-                var name = $("#tipo-arma").val();
-                $(".detalle").hide();
+            $("#weapon-type").change(function(){
+                var name = $("#weapon-type").val();
+                $(".detail").hide();
                 $("."+name).show();
             })
         })

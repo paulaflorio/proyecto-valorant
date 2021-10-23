@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Descripcion y Keywords-->
-    <meta name="description" content="Pelea alrededor del Mundo: Cada mapa es un campo de batalla para demostrar tu pensamiento creativo.">
+    <!--Description y Keywords-->
+    <meta name="description" content="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments.">
     <meta name="keywords" content="ascent, haven, split, bind, icebox, breeze, fracture">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -60,78 +60,232 @@
                 </div>
             </div>
         </section>
-        <main class="escenarios">
+        <main class="playground">
             <div id="carousel" class="carousel slide carousel--maps" data-bs-ride="carousel" data-bs-interval="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="container mapa">
-                        <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">ASCENT</h2>
-                            <p class="mapa__contenido__desc">Un campo abierto para pequeñas batallas de posicionamiento y desgaste dividen Ascenso en dos sitios. Puedes fortificar cada uno con puertas de bombas irreversibles; una vez puestas, tendrás que destruirlas o encontrar otra forma de pasar. Cede el menor territorio posible.</p>
-                        </div>
-                        <img class="mapa__img" src="../img/mapas/ascent.png" alt="ASCENT" >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container mapa">
-                        <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">SPLIT</h2>
-                            <p class="mapa__contenido__desc">Si quieres ir lejos, debes subir. Un par de sitios divididos por un centro elevado permite un movimiento rápido por medio de dos ascensores de cuerda. Cada sitio cuenta con una gran torre vital para el control. Recuerda mirar arriba antes de que todo vuele por los aires.</p>
-                        </div>
-                        <img class="mapa__img" src="../img/mapas/split.png" alt="SPLIT" >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container mapa">
-                        <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">HAVEN</h2>
-                            <p class="mapa__contenido__desc">Bajo un monasterio olvidado, retumba el clamor de agentes rivales que luchan por controlar tres ubicaciones distintas. Hay más territorio que en otros mapas, pero los defensores pueden aprovecharlo para avanzar de forma agresiva y flanquear.</p>
-                        </div>
-                        <img class="mapa__img" src="../img/mapas/haven.png" alt="HAVEN" >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container mapa">
-                        <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">BIND</h2>
-                            <p class="mapa__contenido__desc">Dos ubicaciones sin zona central. Derecha o izquierda, ¿por cuál os decantaréis? Ambas disponen de caminos directos para los atacantes y dos teleportadores unidireccionales que facilitan los flanqueos.</p>
-                        </div>
-                        <img class="mapa__img" src="../img/mapas/bind.png" alt="BIND" >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container mapa">
-                        <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">ICEBOX</h2>
-                            <p class="mapa__contenido__desc">Vuestro próximo campo de batalla será una zona de excavación de Kingdom secreta y abandonada en territorio ártico. Las dos zonas para plantar la Spike están protegidas por capas de nieve y metal, y cubrir las distancias horizontales requerirá destreza. Recurrid a las tirolinas y pillad al enemigo por sorpresa.</p>
-                        </div>
-                        <img class="mapa__img" src="../img/mapas/icebox.png" alt="ICEBOX" >
-                    </div>
-                  </div>
-                    <div class="carousel-item"> 
-                        <div class="container mapa">
-                            <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">BREEZE</h2>
-                            <p class="mapa__contenido__desc">Disfrutad de las vistas de ruinas históricas y cuevas junto al mar en este paraíso tropical, pero no olvidéis traer protección... La necesitaréis en los amplios espacios abiertos y enfrentamientos a largo alcance. Vigilad vuestros flancos: llega Breeze.</p>
+                    <div class="carousel-item active">
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">ASCENT</h2>
+                                <p class="map__content__desc">An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they’re down, you’ll have to destroy them or find another way. Yield as little territory as possible.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-ascent">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-ascent" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">VIEW GALERY</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/ascent/ascent-1.jpeg" alt="Ascent" class="pictures__item">
+                                                    <img src="../img/videos-modal/ascent/ascent-2.jpeg" alt="Ascent" class="pictures__item">
+                                                    <img src="../img/videos-modal/ascent/ascent-3.jpeg" alt="Ascent" class="pictures__item">
+                                                    <img src="../img/videos-modal/ascent/ascent-4.jpeg" alt="Ascent minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
                             </div>
-                            <img class="mapa__img" src="../img/mapas/breeze.png" alt="BREEZE" >
+                            <img class="map__img" src="../img/mapas/ascent.png" alt="ASCENT" >
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="container mapa">
-                            <div class="mapa__contenido">
-                            <h2 class="mapa__contenido__titulo">FRACTURE</h2>
-                            <p class="mapa__contenido__desc">Una instalación de investigación de alto secreto que quedó dividida tras un experimento fallido relacionado con la radianita. Al igual que el mapa, las opciones de los defensores son muy variadas, así que la decisión queda en tus manos: ve a buscar a los atacantes a su territorio o atrinchérate y aguanta el asalto.</p>
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">SPLIT</h2>
+                                <p class="map__content__desc">If you want to go far, you’ll have to go up. A pair of sites split by an elevated center allows for rapid movement using two rope ascenders. Each site is built with a looming tower vital for control. Remember to watch above before it all blows sky-high.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-split">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-split" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title">VIEW GALERY</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/split/split-1.jpeg" alt="Split" class="pictures__item">
+                                                    <img src="../img/videos-modal/split/split-2.jpeg" alt="Split" class="pictures__item">
+                                                    <img src="../img/videos-modal/split/split-3.jpeg" alt="Split" class="pictures__item">
+                                                    <img src="../img/videos-modal/split/split-4.png" alt="Split minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
                             </div>
-                            <img class="mapa__img" src="../img/mapas/fracture.png" alt="FRACTURE" >
+                            <img class="map__img" src="../img/mapas/split.png" alt="SPLIT" >
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">HAVEN</h2>
+                                <p class="map__content__desc">Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. There’s more territory to control, but defenders can use the extra real estate for aggressive pushes.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-haven">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-haven" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title">VIEW GALERY</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/haven/haven-1.jpeg" alt="Haven" class="pictures__item">
+                                                    <img src="../img/videos-modal/haven/haven-2.jpeg" alt="Haven" class="pictures__item">
+                                                    <img src="../img/videos-modal/haven/haven-3.jpeg" alt="Haven" class="pictures__item">
+                                                    <img src="../img/videos-modal/haven/haven-4.png" alt="Haven minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                            <img class="map__img" src="../img/mapas/haven.png" alt="HAVEN" >
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">BIND</h2>
+                                <p class="map__content__desc">Two sites. No middle. Gotta pick left or right. What’s it going to be then? Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-bind">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-bind" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">VIEW GALERY</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/bind/bind-1.jpeg" alt="Bind" class="pictures__item">
+                                                    <img src="../img/videos-modal/bind/bind-2.jpeg" alt="Bind" class="pictures__item">
+                                                    <img src="../img/videos-modal/bind/bind-3.jpeg" alt="Bind" class="pictures__item">
+                                                    <img src="../img/videos-modal/bind/bind-4.png" alt="Bind minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                            <img class="map__img" src="../img/mapas/bind.png" alt="BIND" >
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">ICEBOX</h2>
+                                <p class="map__content__desc">Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The two plant sites protected by snow and metal require some horizontal finesse. Take advantage of the ziplines and they’ll never see you coming.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-icebox">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-icebox" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">VIEW GALERY</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/icebox/icebox-1.jpeg" alt="Icebox" class="pictures__item">
+                                                    <img src="../img/videos-modal/icebox/icebox-2.jpeg" alt="Icebox" class="pictures__item">
+                                                    <img src="../img/videos-modal/icebox/icebox-3.jpeg" alt="Icebox" class="pictures__item">
+                                                    <img src="../img/videos-modal/icebox/icebox-4.jpeg" alt="Icebox minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                            <img class="map__img" src="../img/mapas/icebox.png" alt="ICEBOX" >
+                        </div>
+                    </div>
+                    <div class="carousel-item"> 
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">BREEZE</h2>
+                                <p class="map__content__desc">Take in the sights of historic ruins or seaside caves on this tropical paradise. But bring some cover. You'll need them for the wide open spaces and long range engagements. Watch your flanks and this will be a Breeze.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-breeze">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-breeze" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">VIEW GALERY</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/breeze/breeze-1.jpeg" alt="Breeze" class="pictures__item">
+                                                    <img src="../img/videos-modal/breeze/breeze-2.jpeg" alt="Breeze" class="pictures__item">
+                                                    <img src="../img/videos-modal/breeze/breeze-3.jpeg" alt="Breeze" class="pictures__item">
+                                                    <img src="../img/videos-modal/breeze/breeze-4.jpeg" alt="Breeze minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                            <img class="map__img" src="../img/mapas/breeze.png" alt="BREEZE" >
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container map">
+                            <div class="map__content">
+                                <h2 class="map__content__title">FRACTURE</h2>
+                                <p class="map__content__desc">A top secret research facility split apart by a failed radianite experiment. With defender options as divided as the map, the choice is yours: meet the attackers on their own turf or batten down the hatches to weather the assault.</p>
+                                <button type="button" class="btn btn-primary galery" data-bs-toggle="modal" data-bs-target="#modal-fracture">VIEW GALERY</button>
+                                <div class="modal fade" tabindex="-1" id="modal-fracture" aria-hidden="true" aria-labelledby="modal-title">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content window">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">VIEW GALERY</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pictures">
+                                                    <img src="../img/videos-modal/fracture/fracture-1.jpeg" alt="Fracture" class="pictures__item">
+                                                    <img src="../img/videos-modal/fracture/fracture-2.jpeg" alt="Fracture" class="pictures__item">
+                                                    <img src="../img/videos-modal/fracture/fracture-3.jpeg" alt="Fracture" class="pictures__item">
+                                                    <img src="../img/videos-modal/fracture/fracture-4.jpeg" alt="Fracture minimap" class="pictures__item">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                         
+                            <img class="map__img" src="../img/mapas/fracture.png" alt="FRACTURE" >
                         </div>
                     </div> 
                 </div>
-                <button class="carousel-control-prev controles--mapa" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <button class="carousel-control-prev controls--maps" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next controles--mapa" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <button class="carousel-control-next controls--maps" type="button" data-bs-target="#carousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>

@@ -123,7 +123,7 @@
   background-color: white;
 }
 
-.botones, .we__text__link, .info__link, .link, .powers {
+.botones, .we__text__link, .info__link, .link, .powers, .galery {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -140,7 +140,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .botones, .we__text__link, .info__link, .link, .powers {
+  .botones, .we__text__link, .info__link, .link, .powers, .galery {
     font-size: 11px;
   }
 }
@@ -705,6 +705,7 @@ html body .main-container {
 
 @media screen and (max-width: 768px) {
   .carousel {
+    height: auto;
     width: 700px;
   }
 }
@@ -915,7 +916,13 @@ html body .main-container {
 }
 
 .controls--maps {
-  top: 500px;
+  top: 450px;
+}
+
+@media screen and (max-width: 425px) {
+  .controls--maps {
+    top: 650px;
+  }
 }
 
 .sector {
@@ -965,7 +972,7 @@ html body .main-container {
   color: #191919;
 }
 
-.escenarios {
+.playground {
   background-color: #191919;
   background-image: url(../img/fondoClaro-modified.png);
   display: -webkit-box;
@@ -984,13 +991,19 @@ html body .main-container {
   height: 700px;
 }
 
-@media screen and (max-width: 425px) {
-  .escenarios {
-    height: 600px;
+@media screen and (max-width: 768px) {
+  .playground {
+    height: 800px;
   }
 }
 
-.mapa {
+@media screen and (max-width: 425px) {
+  .playground {
+    height: 800px;
+  }
+}
+
+.map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,17 +1020,18 @@ html body .main-container {
 }
 
 @media screen and (max-width: 768px) {
-  .mapa {
+  .map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 0;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .mapa {
+  .map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1026,7 +1040,7 @@ html body .main-container {
   }
 }
 
-.mapa__contenido {
+.map__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,58 +1053,91 @@ html body .main-container {
           justify-content: space-between;
 }
 
-.mapa__contenido__titulo {
+.map__content__title {
   font-size: 70px;
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
   color: white;
   padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .mapa__contenido__titulo {
+  .map__content__title {
+    font-size: 80px;
     padding-top: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .mapa__contenido__titulo {
+  .map__content__title {
+    font-size: 80px;
     text-align: center;
     padding-top: 0;
   }
 }
 
-.mapa__contenido__desc {
+.map__content__desc {
   width: 400px;
   font-size: 18px;
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .map__content__desc {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 425px) {
-  .mapa__contenido__desc {
-    font-size: 16px;
+  .map__content__desc {
+    font-size: 18px;
     text-align: center;
     width: 325px;
     padding-bottom: 40px;
   }
 }
 
-.mapa__img {
+.map__img {
   height: 300px;
 }
 
 @media screen and (max-width: 425px) {
-  .mapa__img {
+  .map__img {
     height: 250px;
     margin-bottom: 40px;
   }
 }
 
-.controles--mapa {
-  margin-top: 300px;
+.galery {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 100px;
 }
 
-.armas {
+@media screen and (max-width: 425px) {
+  .galery {
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pictures__item {
+  width: auto;
+  padding: 20px 0;
+}
+
+.weapons {
   background-image: url(../img/arsenal.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -1113,16 +1160,16 @@ html body .main-container {
   width: 100%;
 }
 
-.armas__titulo {
-  font-size: 50px;
+.weapons__title {
+  font-size: 100px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
-  -webkit-text-stroke: 0.5px black;
   text-transform: uppercase;
   padding: 30px;
 }
 
-.armas__opciones {
+.weapons__options {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1132,7 +1179,7 @@ html body .main-container {
   border: 1px black solid;
 }
 
-.armas__opciones__item {
+.weapons__options__item {
   background: none;
 }
 
@@ -1142,29 +1189,31 @@ html body .main-container {
   background-size: cover;
 }
 
-.arsenal__tipo {
+.arsenal__type {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 70px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
-.arsenal__grilla {
+.arsenal__grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "uno dos" "tres cuatro" "cinco none";
+      grid-template-areas: "one two" "three four" "five none";
   -ms-grid-columns: 600px 600px;
       grid-template-columns: 600px 600px;
   grid-row-gap: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 50px 0;
 }
 
 @media screen and (max-width: 768px) {
-  .arsenal__grilla {
+  .arsenal__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1178,7 +1227,7 @@ html body .main-container {
 }
 
 @media screen and (max-width: 425px) {
-  .arsenal__grilla {
+  .arsenal__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1192,7 +1241,37 @@ html body .main-container {
   }
 }
 
-.arma {
+#one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+}
+
+#four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: four;
+}
+
+#five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: five;
+}
+
+.weapon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1211,13 +1290,13 @@ html body .main-container {
   margin-bottom: 0px;
 }
 
-.arma:hover {
+.weapon:hover {
   background-color: #191919;
   color: #668CD9;
 }
 
 @media screen and (max-width: 425px) {
-  .arma {
+  .weapon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1227,7 +1306,7 @@ html body .main-container {
   }
 }
 
-.arma__desc {
+.weapon__desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1239,65 +1318,60 @@ html body .main-container {
   color: white;
 }
 
-.arma__desc:hover {
+.weapon__desc:hover {
   color: #668CD9;
 }
 
 @media screen and (max-width: 768px) {
-  .arma__desc {
+  .weapon__desc {
     margin-left: 30px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .arma__desc {
+  .weapon__desc {
     width: 350px;
   }
 }
 
-.arma__desc__titulo {
+.weapon__desc__title {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   padding: 20px;
 }
 
-@media screen and (max-width: 425px) {
-  .arma__desc__titulo {
-    font-size: 16px;
-  }
-}
-
-.arma__desc__texto {
+.weapon__desc__text {
   font-size: 16px;
   padding: 30px;
 }
 
-.arma__imagen {
+.weapon__img {
   height: 100px;
   position: relative;
   top: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .arma__imagen {
+  .weapon__img {
     height: 80px;
     margin-left: 30px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .arma__imagen {
+  .weapon__img {
     height: auto;
     top: 20px;
   }
 }
 
-.detalle {
+.detail {
   display: none;
 }
 
-.mas {
+.more {
   background-image: url(../img/banner.jpg);
   background-attachment: fixed;
   background-position: initial;
@@ -1308,45 +1382,35 @@ html body .main-container {
 }
 
 @media screen and (max-width: 768px) {
-  .mas {
+  .more {
     background-position: center;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .mas {
+  .more {
     background-position: center;
   }
 }
 
-.noticias {
-  background-image: url(../img/fondoClaroo.jpg);
+.news {
+  background-color: #191919;
+  background-image: url(../img/fondoClaro-modified.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .noticias {
-    height: 1200px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .noticias {
-    height: 1800px;
-  }
-}
-
-.noticias__titulo {
-  font-size: 50px;
+.news__title {
+  font-size: 100px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   text-transform: uppercase;
   padding: 50px;
 }
 
-.noticia {
+.new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,11 +1421,12 @@ html body .main-container {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
-  padding-left: 80px;
+  padding-left: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
-  .noticia {
+  .new {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 50px;
@@ -1369,7 +1434,7 @@ html body .main-container {
 }
 
 @media screen and (max-width: 425px) {
-  .noticia {
+  .new {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1378,24 +1443,24 @@ html body .main-container {
   }
 }
 
-.noticia--dos {
+.new--two {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
 @media screen and (max-width: 425px) {
-  .noticia--dos {
+  .new--two {
     margin-right: 0;
   }
 }
 
-.noticia__img__uno {
+.new__img__capture {
   height: 200px;
 }
 
-.noticia__detalles {
+.new__detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1405,28 +1470,28 @@ html body .main-container {
           flex-direction: column;
 }
 
-.articulo {
+.article {
   color: white;
   width: 200px;
   margin-left: 30px;
 }
 
-.articulo__fecha {
+.article__date {
   font-size: 16px;
   display: block;
 }
 
-.articulo__titulo {
+.article__title {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.articulo__desc {
+.article__desc {
   font-size: 16px;
 }
 
-.articulo__ver__mas {
+.article__view__more {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -1434,22 +1499,12 @@ html body .main-container {
   padding: 10px;
 }
 
-.articulo__ver__mas:hover {
+.article__view__more:hover {
   font-size: 18px;
 }
 
-.sec {
-  background-image: url(../img/tele.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-}
-
-.otra {
-  background-image: url(../img/fondoClaroo.jpg);
+.extra {
+  background-image: url(../img/fondoClaro-modified.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
@@ -1462,7 +1517,7 @@ html body .main-container {
 }
 
 @media screen and (max-width: 768px) {
-  .otra {
+  .extra {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1472,27 +1527,28 @@ html body .main-container {
 }
 
 @media screen and (max-width: 425px) {
-  .otra {
+  .extra {
     height: 600px;
   }
 }
 
-.comentarios {
+.comments {
   width: 600px;
   padding: 100px;
 }
 
 @media screen and (max-width: 425px) {
-  .comentarios {
+  .comments {
     width: 400px;
     padding: 20px;
     padding-top: 100px;
   }
 }
 
-.comentarios__titulo {
-  font-size: 30px;
+.comments__title {
+  font-size: 60px;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
   color: white;
   padding-bottom: 30px;

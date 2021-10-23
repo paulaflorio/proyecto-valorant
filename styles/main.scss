@@ -484,6 +484,7 @@ html{
     margin-top: 60px;
 
     @include tablet{
+        height: auto;
         width: 700px;
     }
 
@@ -650,7 +651,11 @@ html{
     }
 
     &--maps{
-        top: 500px;
+        top: 450px;
+
+        @include movil{
+            top: 650px;
+        }
     }
     
 }
@@ -692,16 +697,14 @@ html{
             font-weight: bold;
             text-transform: uppercase;
             color: #191919;
-
-
-         
+        
         }
 
     }    
     
 }
 
-.escenarios{
+.playground{
     background-color: #191919;
     background-image: url(../img/fondoClaro-modified.png);
     display: flex;
@@ -710,12 +713,16 @@ html{
     justify-content: center;
     height: 700px;
 
+    @include tablet{
+        height: 800px;
+    }
+
     @include movil{
-        height: 600px;
+        height: 800px;
     }
 }
 
-.mapa{
+.map{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -725,6 +732,8 @@ html{
     @include tablet{
         flex-direction: column;
         margin-top: 0;
+        margin-bottom: 60px;
+
     }
 
     @include movil{
@@ -732,24 +741,27 @@ html{
         margin-top: 0;
     }
 
-    &__contenido{
+    &__content{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
        
-        &__titulo{
+        &__title{
             font-size: 70px;
             font-weight: bold;
             font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
             color: white;
             padding-top: 30px;
 
             @include tablet{
+                font-size: 80px;
                 padding-top: 0;
             }
 
             @include movil{
+                font-size: 80px;
                 text-align: center;
                 padding-top: 0;
             }
@@ -761,8 +773,12 @@ html{
             font-size: 18px;
             color: white;
 
+            @include tablet{
+                font-size: 20px;
+            }
+
             @include movil{
-                font-size: 16px;
+                font-size: 18px;
                 text-align: center;
                 width: 325px;
                 padding-bottom: 40px;
@@ -783,11 +799,29 @@ html{
 
 }
 
-.controles--mapa{
-    margin-top: 300px;
+.galery{
+    @extend .botones;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    @include movil{
+        margin-top: 20px;
+        margin-left: 60px;
+    }
 }
 
-.armas{
+.pictures{
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        width: auto;
+        padding: 20px 0;
+    }
+}
+
+.weapons{
     background-image: url(../img/arsenal.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -800,16 +834,16 @@ html{
     height: 100vh;
     width: 100%;
 
-    &__titulo{
-        font-size: 50px;
+    &__title{
+        font-size: 100px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         color: white;
-        -webkit-text-stroke: 0.5px black;
         text-transform: uppercase;
         padding: 30px;
     }
 
-    &__opciones{
+    &__options{
         font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
@@ -830,24 +864,26 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 
-    &__tipo{
+    &__type{
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 70px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         color: white;
         padding-left: 30px;
-        padding-top: 30px;
+        padding-top: 40px;
     }
     
-    &__grilla{
+    &__grid{
         display: grid;
         grid-template-areas: 
-        "uno dos"
-        "tres cuatro"
-        "cinco none";
+        "one two"
+        "three four"
+        "five none";
         grid-template-columns: 600px 600px;
         grid-row-gap:40px;
         justify-content: center;
+        padding: 50px 0;
 
         @include tablet{
             display: flex;
@@ -864,7 +900,25 @@ html{
 
 }
 
-.arma{
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+
+
+.weapon{
     display: flex;
     flex-direction: row;
     transition-property: background-color, color ;
@@ -903,24 +957,22 @@ html{
             width: 350px;
         }
 
-            &__titulo{
+            &__title{
                 text-transform: uppercase;
-                font-size: 20px;
+                font-size: 50px;
                 font-weight: bold;
+                font-family: 'Bebas Neue', cursive;
                 padding: 20px;
 
-                @include movil{
-                    font-size: 16px;
-                }
             }
 
-            &__texto{
+            &__text{
                 font-size: 16px;
                 padding: 30px;
             }
     }
 
-    &__imagen{
+    &__img{
         height: 100px;
         position: relative;
         top: 100px;
@@ -937,11 +989,11 @@ html{
     }
 }
 
-.detalle{
+.detail{
     display: none;
 }
 
-.mas{
+.more{
     background-image: url(../img/banner.jpg);
     background-attachment: fixed;
     background-position:initial;
@@ -960,35 +1012,31 @@ html{
 
 }
 
-.noticias{
-    background-image: url(../img/fondoClaroo.jpg);
+.news{
+    background-color: #191919;
+    background-image: url(../img/fondoClaro-modified.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: auto;
 
-    @include tablet{
-        height: 1200px;
-    }
 
-    @include movil{
-        height: 1800px;
-    }
-
-    &__titulo{
-        font-size: 50px;
+    &__title{
+        font-size: 100px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         color: white;
         text-transform: uppercase;
         padding: 50px;
     }
 }
 
-.noticia{
+.new{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
-    padding-left: 80px;
+    padding-left: 50px;
+    margin-bottom: 40px;
 
     @include tablet{
         justify-content: space-around;
@@ -1000,9 +1048,9 @@ html{
         padding-left: 0px;
     }
 
-    &--dos{
+    &--two{
         justify-content: flex-end;
-        margin-right: 80px;
+        margin-right: 50px;
 
         @include movil{
             margin-right: 0;
@@ -1011,28 +1059,28 @@ html{
 
     &__img{
 
-        &__uno{
+        &__capture{
             height: 200px;
         }
     }
 
-    &__detalles{
+    &__detail{
         display: flex;
         flex-direction: column;
     }
 }
 
-.articulo{
+.article{
     color: white;
     width: 200px;
     margin-left: 30px;
 
-    &__fecha{
+    &__date{
         font-size: 16px;
         display: block;
     }
 
-    &__titulo{
+    &__title{
         font-size: 22px;
         font-weight: bold;
         text-transform: uppercase;
@@ -1042,9 +1090,9 @@ html{
         font-size: 16px;
     }
 
-    &__ver{
+    &__view{
 
-        &__mas{
+        &__more{
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
@@ -1053,24 +1101,14 @@ html{
 
         }
 
-        &__mas:hover{
+        &__more:hover{
             font-size: 18px;
         }
     }
 }
 
-.sec{
-    background-image: url(../img/tele.jpg);
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-}
-
-.otra{
-    background-image: url(../img/fondoClaroo.jpg);
+.extra{
+    background-image: url(../img/fondoClaro-modified.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -1088,7 +1126,7 @@ html{
 
 }
 
-.comentarios{
+.comments{
     width: 600px;
     padding: 100px;
 
@@ -1098,9 +1136,10 @@ html{
         padding-top: 100px;
     }
 
-    &__titulo{
-        font-size: 30px;
+    &__title{
+        font-size: 60px;
         font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
         text-transform: uppercase;
         color: white;
         padding-bottom: 30px;
