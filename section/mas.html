@@ -29,6 +29,7 @@
 <body>
     <div class="main-container"> 
         <header>
+            <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark nav">
                 <div class="container-fluid">
                     <a class="navbar-brand brand" href="../index.html">
@@ -49,9 +50,11 @@
                 </div>
             </nav>
         </header>
+        <!--Intro More-->
         <section class="more">
         </section>
         <main>
+            <!--News Section-->
             <article class="news">
                 <h1 class="news__title">Noticias</h1>
                 <div class="container">
@@ -103,6 +106,42 @@
                         </div>
                     </div>
                 </div>
+            </article>
+            <div class="extra">
+                <!--Related Content-->
+                <div class="media">
+                    <h2 class="media__title">Valorant Skins</h2>
+                    <div id="carousel-skins" class="carousel carousel--skins slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="container">
+                                <div class="carousel-item active skin">
+                                    <img src="../img/media/elderflame-dragon.jpg" alt="Elderflame Dragon" class="skin__img">
+                                </div>
+                                <div class="carousel-item skin">
+                                    <img src="../img/media/oni.jpg" alt="Oni" class="skin__img">
+                                </div>
+                                <div class="carousel-item skin">
+                                    <img src="../img/media/prime.jpg" alt="Prime" class="skin__img">
+                                </div>
+                                <div class="carousel-item skin">
+                                    <img src="../img/media/reaver.jpg" alt="Reaver" class="skin__img">
+                                </div>
+                                <div class="carousel-item skin">
+                                    <img src="../img/media/singularity.jpg" alt="Singularity" class="skin__img">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev controls--skins" type="button" data-bs-target="#carousel-skins" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next controls--skins" type="button" data-bs-target="#carousel-skins" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!--Comments Section-->
                 <div class="comments">
                     <h2 class="comments__title">Comments</h2>
                     <form action="" method="GET">
@@ -112,7 +151,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email" class="form-group__label">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="nameombre@example.com" required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="agentes" class="form-group__label">Select your favorite agent</label>
@@ -144,9 +183,10 @@
                             <button type="button" class="btn btn-secondary">Send</button>
                         </div>
                     </form>
-                </div>
-            </article>
+                 </div>
+            </div>
         </main>
+        <!--Footer-->
         <footer class="footer">
             <img src="../img/riot.png" alt="RIOT" class="footer__img">
             <div class="footer__icons">
@@ -183,7 +223,9 @@
             </div>
         </footer>
     </div>
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

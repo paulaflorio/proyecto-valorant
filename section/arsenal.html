@@ -28,6 +28,7 @@
 <body>
     <div class="main-container"> 
         <header>
+            <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark nav">
                 <div class="container-fluid">
                     <a class="navbar-brand brand" href="../index.html">
@@ -48,6 +49,7 @@
                 </div>
             </nav>
         </header>
+        <!--Arsenal Selection-->
         <section class="weapons">
             <h1 class="weapons__title">Choose your weapon</h1>
             <select name="weapons" id="weapon-type" class="weapons__options">
@@ -63,6 +65,7 @@
             </select>
         </section>
         <main>
+            <!--Arsenal Description-->
             <div id="weapons-details" class="all">
                 <article class="arsenal all sidearms detail">
                     <h2 class="arsenal__type" >Sidearms</h2>               
@@ -72,7 +75,7 @@
                                 <h3 class="weapon__desc__title" >Classic.</h3>
                                 <p class="weapon__desc__text">Primary fire lands precise shots when still, and is equipped with an alternate burst-firing mode for close encounters.</p>
                             </div>
-                            <img src="../img/armas/classic.png" alt="Calssic" class="weapon__img">
+                            <img src="../img/armas/classic.png" alt="Classic" class="weapon__img">
                         </div>
                         <div class="weapon">
                             <div class="weapon__desc" id="two">
@@ -228,6 +231,7 @@
                 </article>
             </div>
         </main>
+        <!--Footer-->
         <footer class="footer">
             <img src="../img/riot.png" alt="RIOT" class="footer__img">
             <div class="footer__icons">
@@ -264,15 +268,16 @@
             </div>
         </footer>
     </div>
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!--Arsenal Selection-->
     <script
-    src="https://code.jquery.com/jquery-2.2.4.js"
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $("#weapon-type").change(function(){

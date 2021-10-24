@@ -43,7 +43,7 @@ html{
 }
 
 .principal{
-    background-image: url(../img/equipo2.jpg);
+    background-image: url(../img/equipo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ html{
 
 .presentation{
     background-color: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ html{
 
 .agents{
     background-color: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     background-size: cover;
 
     @include movil{
@@ -289,7 +289,7 @@ html{
 }
 
 .middle{
-    background-image: url(../img/intermedio.png);
+    background-image: url(../img/middle.png);
     background-attachment: fixed;
     background-position:initial;
     background-repeat: no-repeat;
@@ -307,7 +307,7 @@ html{
 }
 
 .end{
-    background-image: url(../img/final.png);
+    background-image: url(../img/end.png);
     background-attachment: fixed;
     background-position:initial;
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ html{
 
 .maps{
     background: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     height: 600px;
 
     @include tablet{
@@ -420,19 +420,19 @@ html{
 }
 
 .team{
-    background-image: url(../img/thumb-1920-1075657.jpg);
+    background-image: url(../img/team.jpg);
     background-attachment: fixed;
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 75vh;
     width: 100%;
 
 }
 
 .characters{
     background-color: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,6 +491,16 @@ html{
     @include movil{
         height: auto;
         width: 420px;
+    }
+    
+    &--skins{
+        width: 600px;
+        margin-top: 30px;
+
+        @include movil{
+            width: 400px;
+        }
+
     }
 }
 
@@ -657,6 +667,10 @@ html{
             top: 650px;
         }
     }
+
+    &--skins{
+        top: 150px;
+    }
     
 }
 
@@ -706,7 +720,7 @@ html{
 
 .playground{
     background-color: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -860,7 +874,7 @@ html{
 }
 
 .arsenal{
-    background-image: url(../img/fondoClaroo.jpg);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1014,7 +1028,7 @@ html{
 
 .news{
     background-color: #191919;
-    background-image: url(../img/fondoClaro-modified.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -1036,11 +1050,12 @@ html{
     align-items: center;
     padding-top: 30px;
     padding-left: 50px;
-    margin-bottom: 40px;
+    padding-bottom: 50px;
+    
 
     @include tablet{
         justify-content: space-around;
-        margin-bottom: 50px;
+
     }
 
     @include movil{
@@ -1108,20 +1123,21 @@ html{
 }
 
 .extra{
-    background-image: url(../img/fondoClaro-modified.png);
+    background-color: #191919;
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 700px;
     display: flex;
     align-items: center;
     
     @include tablet{
         flex-direction: column;
-        height: 1000px;
+        height: auto;
     }
 
     @include movil{
-        height: 600px;
+        height:auto;
     }
 
 }
@@ -1134,6 +1150,7 @@ html{
         width: 400px;
         padding: 20px;
         padding-top: 100px;
+        margin-bottom: 40px;
     }
 
     &__title{
@@ -1159,3 +1176,38 @@ html{
     font-size: 12px;
 }
 
+.media{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 250px;
+
+    @include tablet{
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    &__title{
+        font-size: 60px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+        text-transform: uppercase;
+        color: white;
+
+    }
+}
+
+.skin{
+   
+    &__img{
+        height: 350px;
+
+        @include tablet{
+            height: 330px;
+        }
+
+        @include movil{
+            height: 300px;
+        }
+    }
+}
