@@ -1198,6 +1198,7 @@ html body .main-container {
 }
 
 .arsenal {
+  background-color: #191919;
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1216,7 +1217,7 @@ html body .main-container {
 .arsenal__grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "one two" "three four" "five none";
+      grid-template-areas: "one two" "three four" "five .";
   -ms-grid-columns: 600px 600px;
       grid-template-columns: 600px 600px;
   grid-row-gap: 40px;

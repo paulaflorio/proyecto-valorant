@@ -874,6 +874,7 @@ html{
 }
 
 .arsenal{
+    background-color: #191919;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -893,7 +894,7 @@ html{
         grid-template-areas: 
         "one two"
         "three four"
-        "five none";
+        "five .";
         grid-template-columns: 600px 600px;
         grid-row-gap:40px;
         justify-content: center;
