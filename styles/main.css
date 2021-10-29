@@ -1136,6 +1136,14 @@ html body .main-container {
   }
 }
 
+.galery:hover {
+  background-color: black !important;
+  color: white;
+  border: 2px solid #668CD9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .pictures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,10 +1519,6 @@ html body .main-container {
   font-size: 16px;
   color: #668CD9;
   padding: 10px;
-}
-
-.article__view__more:hover {
-  font-size: 18px;
 }
 
 .extra {
